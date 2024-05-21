@@ -1,0 +1,541 @@
+
+@import "../../Global/variables.scss";
+
+.contacts {
+    &__inner {
+        display: flex;
+        padding-bottom: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 740px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    &__item {
+        margin-right: 38px;
+        display: flex;
+        color: $secondary;
+        margin-bottom: 50px;
+
+        img {
+            margin-right: 25px;
+        }
+    }
+    &__content {
+        a {
+            text-decoration: none;
+            color: $secondary;
+            white-space: nowrap;
+        }
+    }
+    &__phone, &__email {
+        font-size: 18px;
+    }
+
+    &__addr {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 20px;
+    }
+    &__map {
+        width: 735px;
+        height: 430px;
+    }
+
+    &__form {
+        padding: 54px 50px 32px;    
+        background-color: $primary;
+        color: $white;    
+        border-radius: 30px;
+    }
+    
+    .form {
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 90px;
+        }
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            &-comf {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 65px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 85px;
+            white-space: nowrap;
+        }
+        &__input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid $white;
+            padding: 5px;
+            color: $white;
+            font-size: 18px;
+            max-width: 280px;
+            width: 100%;
+        }
+        &__textarea {
+            background-color: transparent;
+            border-color: $white;
+            outline: none;
+            color: $white;
+            border-radius: 10px;
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            width: 240px;
+            margin: 0 0 0 15px;
+            input {
+            margin-right: 12px;
+            width: 25px;
+            height: 25px;   
+            }
+            label {
+                font-size: 15px;
+                line-height: 1.4;
+            }
+        }
+
+        &__btn  {
+            padding: 11px 39px;
+            background-color: $white;
+            color: $secondary;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            float: right;
+        }
+    }
+}
+
+@media (max-width: $point1440) {
+    .contacts {
+        &__form {
+            padding: 32px 28px 23px;
+        }
+        .form {
+            &__title {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+        &__map {
+            width: 700px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: $point1350) {
+    .contacts {
+        &__title {
+            font-size: 18px;
+        }
+        &__email {
+            font-size: 16px;
+        }
+        &__item img {
+            width: 50px;
+            margin-right: 20px;
+        } 
+    }
+}
+
+@media (max-width: $point1240) {
+    .contacts {
+        &__title {
+            font-size: 16px;
+        }
+        &__email {
+            font-size: 14px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 15px;
+        } 
+
+        &__form {
+            padding: 32px 34px 23px;
+        }
+        .form {
+            &__title {
+                font-size: 26px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 14px;
+                margin-right: 50px;
+            }
+            &__input {
+                font-size: 14px;
+            }
+        }
+        &__map {
+            width: 600px;
+            height: 340px;
+        }
+    }
+}
+
+@media (max-width: $point1120) {
+    .contacts {
+        &__title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        &__email, &__phone {
+            font-size: 13px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 10px;
+        } 
+
+        &__form {
+            padding: 28px 28px 20px;
+        }
+        .form {
+            &__item {
+                margin-bottom: 40px;
+                width: 320px;
+                &-comf {
+                    margin-bottom: 30px;
+                }
+            }
+            &__title {
+                font-size: 23px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 12px;
+                margin-right: 40px;
+            }
+            &__input {
+                font-size: 11px;
+                max-width: 200px;
+                width: 100%;
+            }
+            &__btn {
+                font-size: 12px;
+                padding: 8px 25px;
+            }
+            &-check-label {
+                font-size: 12px !important;
+            }
+            &-check-input {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &__map {
+            width: 500px;
+            height: 300px;
+        }
+        &__info {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: $point950) {
+    .contacts {
+        &__title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        &__email, &__phone {
+            font-size: 13px;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 10px;
+        } 
+
+        &__form {
+            padding: 28px 28px 20px;
+        }
+        .form {
+            &__item {
+                margin-bottom: 40px;
+                width: 320px;
+                &-comf {
+                    margin-bottom: 30px;
+                }
+            }
+            &__title {
+                font-size: 23px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 12px;
+                margin-right: 40px;
+            }
+            &__input {
+                font-size: 11px;
+                max-width: 200px;
+                width: 100%;
+            }
+            &__btn {
+                font-size: 12px;
+                padding: 8px 25px;
+            }
+            &-check-label {
+                font-size: 12px !important;
+            }
+            &-check-input {
+                width: 22px;
+                height: 22px;
+            }
+        }
+        &__map {
+            width: 420px;
+            height: 230px;
+        }
+        &__info {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: $point820) {
+    .contacts {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__info {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        &__items {
+            justify-content: space-around;
+        }
+        &__map {
+            width: 100%;
+            height: 330px;
+        }
+        &__title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        &__email, &__phone {
+            font-size: 13px;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 10px;
+        } 
+
+        &__form {
+            padding: 28px 28px 20px;
+        }
+        .form {
+            &__item {
+                margin-bottom: 40px;
+                width: 100%;
+                &-comf {
+                    margin-bottom: 30px;
+                }
+            }
+            &__title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 17px;
+                margin-right: 40px;
+            }
+            &__input {
+                font-size: 15px;
+                max-width: 400px;
+                width: 100%;
+            }
+            &__textarea {
+                width: 55%;
+            }
+            &__btn {
+                font-size: 12px;
+                padding: 8px 25px;
+            }
+            &-check-label {
+                font-size: 12px !important;
+            }
+            &-check-input {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point550) {
+    .contacts {
+
+        &__items {
+            justify-content: space-around;
+        }
+        &__map {
+            width: 100%;
+            height: 330px;
+        }
+        &__title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        &__email, &__phone {
+            font-size: 13px;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 10px;
+        } 
+
+        &__form {
+            padding: 28px 28px 20px;
+        }
+        .form {
+            &__item {
+                margin-bottom: 40px;
+                width: 100%;
+                &-comf {
+                    margin-bottom: 30px;
+                }
+            }
+            &__title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 14px;
+                margin-right: 40px;
+            }
+            &__input {
+                font-size: 14px;
+                max-width: 400px;
+                width: 100%;
+            }
+            &__textarea {
+                width: 70%;
+            }
+            &__btn {
+                font-size: 14px;
+                padding: 8px 25px;
+            }
+            &-check-label {
+                font-size: 12px !important;
+            }
+            &-check-input {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point550) {
+    .contacts {
+
+        &__items {
+            justify-content: space-around;
+        }
+        &__map {
+            width: 100%;
+            height: 330px;
+        }
+        &__title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        &__email, &__phone {
+            font-size: 13px;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__item img {
+            width: 35px;
+            margin-right: 10px;
+        } 
+
+        &__form {
+            padding: 28px 28px 20px;
+        }
+        .form {
+            &__item {
+                margin-bottom: 40px;
+                width: 100%;
+                &-comf {
+                    margin-bottom: 30px;
+                }
+            }
+            &__title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            &__text {
+                font-size: 14px;
+                margin-right: 40px;
+            }
+            &__input {
+                font-size: 14px;
+                max-width: 400px;
+                width: 100%;
+            }
+            &__textarea {
+                width: 70%;
+            }
+            &__btn {
+                font-size: 14px;
+                padding: 8px 25px;
+            }
+            &-check-label {
+                font-size: 12px !important;
+            }
+            &-check-input {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+
+
+
+

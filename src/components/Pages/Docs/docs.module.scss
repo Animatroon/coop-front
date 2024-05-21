@@ -1,0 +1,325 @@
+@import '../../Global/variables.scss';
+
+
+.docs {
+    &__text {
+        font-size: 17px;
+        line-height: 1.25;
+        margin-bottom: 85px;   
+        font-weight: 500; 
+    }
+
+
+    &__item {
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin-bottom: 14px;
+
+            font-weight: 700;
+            font-size: 22px;
+            text-decoration: underline;
+            color: $secondary;
+
+    }
+    &__content {
+        display: flex;
+        margin-bottom: 300px;
+    }
+    &__subtitle {
+        display: block;
+        font-size: 18px;
+        color: $secondary;
+        margin-bottom: 16px;
+    }
+    &__downloads {
+        color: $secondary;
+        font-weight: 500;
+        font-size: 18px;
+        a {
+            color: #9F1313 !important;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: transparent; 
+        }
+    }
+
+    // Sidebar
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        margin-right: 150px;
+    }
+    .sidebar {
+        &__title {
+            color: $secondary;
+            font-size: 18px;
+            margin-bottom: 28px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        &__line {
+            height: 1px;
+            width: 100%;
+            background-color: $secondary;
+            margin-bottom: 28px;
+        }
+    }
+}
+
+@media (max-width: $point1120) {
+    .docs {
+        &__text {
+            font-size: 17px;
+        }
+        &__item {
+            margin-bottom: 35px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+            font-size: 18px;    
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        &__downloads {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &__sidebar {
+            width: 300px;
+            margin-right: 100px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 17px;
+                margin-bottom: 26px;
+            }
+            &__line {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point950) {
+    .docs {
+        &__text {
+            font-size: 16px;
+            margin-bottom: 60px;   
+        }
+        &__item {
+            margin-bottom: 35px;
+        }
+        &__title {
+            margin-bottom: 12px;
+            font-size: 16px;    
+        }
+        &__content {
+            margin-bottom: 200px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        &__downloads {
+            font-weight: 500;
+            font-size: 16px;
+
+        }
+        &__sidebar {
+            width: 300px;
+            margin-right: 70px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 17px;
+                margin-bottom: 26px;
+            }
+            &__line {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point820) {
+    .docs {
+        &__inner {
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-bottom: 60px;   
+        }
+        &__item {
+            margin-bottom: 35px;
+        }
+        &__title {
+            margin-bottom: 12px;
+            font-size: 16px;    
+        }
+        &__content {
+            margin-bottom: 200px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        &__downloads {
+            font-size: 14px;
+
+        }
+        &__sidebar {
+            width: 250px;
+            margin-right: 40px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+            &__line {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point750) {
+    .docs {
+        &__text {
+            font-size: 11px;
+            margin-bottom: 30px;   
+        }
+        &__item {
+            margin-bottom: 27px;
+        }
+        &__title {
+            margin-bottom: 8px;
+            font-size: 12px;    
+        }
+        &__subtitle {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        &__downloads {
+            font-size: 12px;
+
+        }
+        &__sidebar {
+            width: 200px;
+            margin-right: 30px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 12px;
+                margin-bottom: 14px;
+            }
+            &__line {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point630) {
+    .docs {
+        &__text {
+            font-size: 9px;
+            margin-bottom: 30px;   
+            margin-right: 10px;
+        }
+        &__item {
+            margin-bottom: 27px;
+        }
+        &__title {
+            margin-bottom: 8px;
+            font-size: 11px;    
+        }
+        &__content {
+            margin-bottom: 150px;
+        }
+        &__subtitle {
+            font-size: 9px;
+            margin-bottom: 8px;
+        }
+        &__downloads {
+            font-size: 9px;
+        }
+        &__sidebar {
+            width: 180px;
+            margin-right: 30px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 11px;
+                margin-bottom: 14px;
+            }
+            &__line {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: $point550) {
+    .docs {
+        &__text {
+            font-size: 9px;
+            margin-bottom: 20px;   
+            margin-right: 5px;
+        }
+        &__item {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 6px;
+            font-size: 10px;    
+        }
+        &__content {
+            margin-bottom: 150px;
+        }
+        &__subtitle {
+            font-size: 8px;
+            margin-bottom: 8px;
+        }
+        &__downloads {
+            font-size: 8px;
+        }
+        &__sidebar {
+            width: 180px;
+            margin-right: 30px;
+        }
+        .sidebar {
+            &__title {
+                font-size: 11px;
+                margin-bottom: 14px;
+            }
+            &__line {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

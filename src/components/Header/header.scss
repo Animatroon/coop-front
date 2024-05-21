@@ -1,0 +1,357 @@
+
+
+@import "../Global/variables.scss";
+
+
+.header {    
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    &__logo {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+    .catalog__drop {
+        width: 320px;
+        height: 136px;
+        background-color: $primary;
+        position: absolute;
+        border: 2px solid $primary;
+        top: 50px;
+        left: 230px;
+    }
+
+    .cat__item:hover {
+        a {
+            color: $primary;
+        }
+        background-color: $white;
+    }
+
+    .catalog__drop::before {
+        content: '';
+        width: 40px;
+        border: 30px solid transparent; border-bottom: 30px solid $primary; 
+        position: absolute;
+        top: -60px;
+        left: 20px;   
+    }
+
+    #catalog:hover + .catalog__drop,
+    .catalog__drop:hover {
+      display: block;
+    }
+
+    .cat__item a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .cat__item {
+        padding: 9px 0;
+        padding-left: 12px;
+    }
+
+    .nav {
+        position: relative;
+    }
+    
+}
+
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1670px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cabinet:hover svg path {
+    fill: $white;
+}
+
+
+  
+
+
+.cabinet {
+    border: 3px solid $primary;
+    border-radius: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 17px;
+    color: #4174B8;
+    background: $white;
+    transition: all 0.2s linear;
+    font-weight: 500;
+    &:hover {
+        background: #4174B8;
+        color: $white;
+    }
+    svg {
+        margin-right: 10px;
+        path {
+            transition: fill .2s linear;
+        }
+    }
+}
+
+.link {
+    margin-right: 40px;
+    transition: all 0.15s linear;
+}
+
+.link.active {
+    text-decoration: underline;
+}
+
+.link, .link a, .lang a{
+    color: $primary;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link:hover a{
+    color:#236dce;
+    text-decoration: underline;
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+    
+    .lang {
+        margin-right: 45px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: $primary;
+    }
+}
+
+.toggle-btn{
+    img {
+        width: 40px;
+    }
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+@media (max-width: $point1700) {
+    .Container {
+        max-width: 1500px;
+    }
+}
+
+@media (max-width: $point1550) {
+    .Container {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: $point1440) {
+    .Container {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: $point1350) {
+    .Container {
+        max-width: 1240px;
+    }
+    .link a, .link {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: $point1240) {
+    .nav {
+        position: fixed !important;
+        background-color: #236dce;
+        height: 100vh;
+        width: 70%; 
+        max-width: 400px; 
+        left: -100%; 
+        top: 146px;
+        transition: left 0.5s ease; 
+        display: block;
+    }
+
+    .link a {
+        color: $white;
+        display: none;
+        &:hover {
+            color: #cecece;
+        }
+    }
+    .link:hover a{
+        color: #cecece;
+    }
+
+    .nav.active .link a {
+        display: block;
+    }
+
+    .link {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    .nav.active {
+        left: 0; 
+        .link {
+            height: 50px;
+        }
+    }
+
+    .catalog__drop {
+        display: none;
+    }
+
+
+    .toggle-btn {
+        display: block;
+        transition: opacity 0.5s ease; 
+        opacity: 1; 
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 99;
+        pointer-events: auto;
+      }
+    
+    .nav.active + .overlay {
+        display: block;
+    }
+    .nav.active {
+        z-index: 100;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: $point750) {
+    .cabinet {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+    .header__logo img {
+        width: 110px;
+    }
+    .nav.active {
+        top: 118px;
+    }
+}
+
+@media (max-width: $point550) {
+    .cabinet {
+        font-size: 8px;
+        padding: 6px 12px;
+        svg {
+            width: 14px;
+            height: 18px;
+        }
+    }
+
+    a.link, .personal a {
+        margin-right: 20px;
+    }
+    .nav.active, .nav  {
+        top: 117px;
+    }
+    .lang {
+        font-size: 17px !important;
+        margin-right: 30px !important;
+    }
+}
+
+@media (max-width: $point400) {
+    .cabinet {
+        font-size: 6px;
+        padding: 4px 7px;
+        svg {
+            width: 10px;
+            height: 14px;
+        }
+    }
+    .header__logo img {
+        width: 70px;
+    }
+    a.link, .personal a {
+        margin-right: 20px;
+    }
+    a.link {
+        font-size: 12px;
+    }
+    .nav.active, .nav  {
+        top: 87px;
+        width: 200px;
+    }
+    .link a {
+        font-size: 14px;    
+    }
+    .toggle-btn  img {
+        width: 30px;
+        height: 30px;
+    }
+    .lang {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: $point330) {
+
+    .cabinet {
+        border-width: 2px;
+        font-size: 6px;
+        padding: 2px 5px;
+        svg {
+            margin-right: 5px;
+        }
+    }
+    .header__logo img {
+        width: 50px;
+        margin-bottom: -10px;
+    }
+    a.link, .personal a {
+        margin-right: 10px;
+    }
+    a.link {
+        font-size: 12px;
+    }
+    .nav.active, .nav  {
+        top: 62px;
+        width: 160px;
+    }
+    .link a {
+        font-size: 14px;    
+    }
+    .toggle-btn  img {
+        width: 20px;
+        height: 20px;
+    }
+    .lang {
+        margin-right: 10px !important;
+    }
+}
+
+

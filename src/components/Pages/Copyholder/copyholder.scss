@@ -1,0 +1,20 @@
+@import "../../Global/variables";
+
+.copyholder {
+    &__inner {
+        margin-top: 50px;
+        margin-bottom: 110px;
+    }
+    tbody, td, tfoot, th, thead, tr {
+        border-color: $primary;
+        border-width: 3px;
+        color: $primary;
+    }
+    &__table {
+        border-radius: 10px;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        color: $white;
+        background: $primary;
+    }
+}

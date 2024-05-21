@@ -1,0 +1,233 @@
+@import '../Global/variables.scss';
+
+.footer {
+    background-color: $secondary;
+    &__container {
+        max-width: 1550px;
+        color: #fff;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 100;
+    }
+    &__item-1 {
+        max-width: 35%;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        a {
+            color: $white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        &-con img {
+            margin-right: 15px;
+        }
+    }
+    &__items {
+        margin-bottom: 100px;
+        display: flex ;
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+    }
+    &__item-2 {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__contacts {
+        width: 75%;
+    }
+    &__container {
+        padding-bottom: 65px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    &__link {
+        margin-bottom: 20px;
+        & a {
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.15s linear;
+        }
+
+        &:hover a {
+            color: $hoverBtn;
+        }
+    }
+
+    @media (max-width: $point1700) {
+        &__container {
+            max-width: $point1440;
+        }
+    }
+
+    @media (max-width: $point1550) {
+        &__container {
+            max-width: $point1440;
+        }
+    }
+
+    @media (max-width: $point1440) {
+        &__container {
+            max-width: $point1350;
+        }
+    }
+
+    @media (max-width: $point1350) {
+        &__container {
+            max-width: $point1240;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        &__container {
+            max-width: 1100px;
+            padding-bottom: 30px;
+        }
+        &__items {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: $point1120) {
+        &__container {
+            max-width: 900px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__link {
+            a {
+            font-size: 12px;
+            }
+            &-con img {
+                margin-right: 5px;
+                width: 30px;
+            }
+        }
+        &__contacts {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: $point950) {
+        &__container {
+            max-width: 800px;
+        }
+        &__title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 9px;
+        }
+        &__links {
+            margin-left: 30px;
+        }
+        &__link a {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: $point820) {
+        &__container {
+            max-width: 700px;
+        }
+    }
+
+    @media (max-width: $point750) {
+        &__container {
+            max-width: 500px;
+        }
+        &__items {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        &__item {
+            margin-bottom: 20px;
+            &-1 {
+                max-width: 100%;
+            }
+        }
+        &__contacts {
+            justify-content: space-around;
+            &-item {
+                flex: 0 !important;
+            }
+        }
+        &__links {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        &__link a {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: $point550) {
+        &__container {
+            max-width: $point400;
+        }
+    }
+    
+    @media (max-width: $point400) {
+        &__container {
+            max-width: 280px;
+        }
+        &__title {
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 7px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .copyright {
+            font-size: 9px;
+        }
+        &__item {
+            margin-bottom: 10px;
+
+            &-2 {
+                flex-direction: column;
+            }
+        }
+
+        &__links {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        &__link {
+            margin-bottom: 0;
+            display: inline;
+            line-height: 1.15;
+        }
+        .link-map {
+            display: flex;
+            margin-bottom: 5px; 
+
+            .footer__link-con img{
+                width: 20px;
+            }
+        }
+    }
+
+}

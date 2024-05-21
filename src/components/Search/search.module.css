@@ -1,0 +1,29 @@
+
+.search {
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 750px
+}
+
+.input {
+    border: 4px solid #13559F;
+    border-radius: 15px;
+    padding: 13px 0;
+    padding-left: 20px;
+    max-width: 750px;
+    width: 100%;    
+
+}
+
+.search svg {
+    position: absolute;
+    cursor: pointer;
+    bottom: 15px;
+    right: 14px;
+}
+
+.input::placeholder, .input {
+    color: #4174B8;
+    font-size: 18px;
+    font-weight: 700;
+}

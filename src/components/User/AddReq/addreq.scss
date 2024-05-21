@@ -1,0 +1,98 @@
+@import '../../Global/variables';
+
+
+.addreq {
+    &__items {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        &__title {
+            color: $secondary;
+            font-size: 18px;
+            margin-bottom: 28px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            img {
+                margin-right: 50px;
+            }
+        }
+        &__line {
+            height: 1px;
+            width: 100%;
+            background-color: $secondary;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+    }
+    &__item, &__descr {
+        display: flex;
+    }
+    &__descr {
+        margin-bottom: 70px;
+    }
+
+    &__input {
+        width: 540px;
+        border: 3px solid $secondary;
+        outline: none;
+        border-radius: 10px;
+        color: $primary;
+        font-weight: 600;
+        padding: 4px 10px;
+
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
+        margin-right: 45px;
+    }
+
+    .select {
+        border: 3px solid $secondary;
+        outline: none;
+        border-radius: 10px;
+        color: $primary;
+        text-align: center;
+        font-weight: 600;
+        padding: 4px 10px;
+
+    }
+
+    &__textarea {
+        width: 895px;
+        border: 3px solid $secondary;
+        border-radius: 10px;
+        height: 140px;
+        resize: none;
+        outline: none;
+        padding: 4px 5px;
+        color: $primary;
+    }
+    &__btn {
+        border: none;
+        outline: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+        border-radius: 10px;
+        background-color: $secondary;
+        float: right;
+    }
+
+}

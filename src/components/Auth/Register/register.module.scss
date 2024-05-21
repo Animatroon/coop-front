@@ -1,0 +1,97 @@
+@import '../../Global/variables';
+
+.register {
+    
+    &__inner {
+        width: 900px;
+        margin: 0 auto;
+        margin-top: 57px;
+        margin-bottom: 154px;
+    }
+    &__img {
+        padding: 35px;
+        border-radius: 50%;
+        border: 3px solid $secondary;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .usertype {
+        background-color: transparent;
+        
+        button {
+            background-color: transparent;
+            color: $secondary;
+            border: 1px solid $secondary;
+            padding: 13px 27px;
+            font-weight: 600;
+            font-size: 18px;
+            
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+
+    &__agree {
+        font-weight: 600;
+        font-size: 18px;
+        padding: 13px 25px;
+        background-color: $secondary;
+        color: $white;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        transition: all 0.15s linear;
+        
+        &:hover {
+            background-color: #134884;
+        }
+    }
+    &__username {
+
+    }
+
+    .input__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .input__items {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 340px;
+            margin-bottom: 25px;
+            outline: none;
+            border: 3px solid $secondary;
+            border-radius: 15px;
+            padding: 10px 0;
+            padding-left: 17px;
+
+            &, &::placeholder {
+                color: $primary;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $secondary;
+    color: $white;
+}
+
+.userButton {
+    &.active {
+      background-color: $secondary !important; /* Желаемый цвет фона для активной кнопки */
+    color: $white !important;
+
+    }
+  }
+  
